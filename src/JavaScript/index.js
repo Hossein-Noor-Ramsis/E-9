@@ -24,14 +24,18 @@ content.addEventListener("click", () => {
 });
 
 // Parallax
-const dubaiText = document.getElementById("dubai-text");
-const burjKhalifa = document.getElementById("burj-khalifa");
-const stars = document.getElementById("stars");
+const hill1 = document.getElementById("hill1");
+const hill3 = document.getElementById("hill5");
+const hill4 = document.getElementById("hill4");
+const heading = document.getElementById("heading");
+const leaf = document.getElementById("leaf");
 
 window.addEventListener("scroll", () => {
   const value = window.scrollY;
 
-  dubaiText.style.translate = `${value * -0.7}px`;
-  burjKhalifa.style.translate = `0 ${value < 800 ? value / 1.3 : 800}px`;
-  stars.style.translate = `0 ${value < 800 ? value / 1.3 : 800}px`;
+  hill1.style.translate = `0 ${value < 800 ? value * 0.4 : 800}px`
+  hill3.style.translate = `${value < 800 ? value * 0.6 : 800}px 0`
+  hill4.style.translate = `${value < 800 ? -value * 0.8 : -800}px 0`
+  heading.style.translate = `0 ${value < 800 ? value : 800}px`
+  leaf.style.translate = `${value < 800 ? value : 800}px 0`
 });

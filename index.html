@@ -59,46 +59,49 @@
         <!-- ===== Nav List ===== -->
         <div
           id="nav-list"
-          class="hidden absolute top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
+          class="backdrop-blur hidden absolute top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
         >
-          <ul class="flex flex-col gap-8 justify-between sm:flex-row sm:gap-4">
+          <ul class="flex flex-col gap-8 justify-between items-center sm:flex-row sm:gap-4">
             <li>
               <a
-                class="bg-[#339281] text-[#f9f9f9] p-1.5 px-4 rounded-full"
+                class="bg-[#339281] text-[#f9f9f9] p-2 px-6 rounded-full"
                 href="#"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-1.5 px-4 rounded-full"
+                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-2 px-6 rounded-full"
                 href="#"
                 >About</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-1.5 px-4 rounded-full"
+                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-2 px-6 rounded-full"
                 href="#"
                 >Places</a
               >
             </li>
             <li>
               <a
-                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-1.5 px-4 rounded-full"
+                class="hover:bg-[#339281] hover:text-[#f9f9f9] p-2 px-6 rounded-full"
                 href="#"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
+
+        <!-- div for centering the menu -->
+        <div class="hidden md:block"></div>
       </nav>
     </header>
     <main id="content">
       <!-- ==================== Parallax ==================== -->
       <section
         id="parallax"
-        class="relative -z-10 flex justify-center items-center"
+        class="relative -z-10 flex justify-center items-center overflow-hidden"
       >
         <img
           id="hill1"
@@ -148,7 +151,10 @@
           src="./src/assets/image/tree.png"
           alt="tree"
         />
-        <h2 class="absolute bottom-[140px] text-5xl font-bold pb-8">
+        <h2
+          id="heading"
+          class="absolute bottom-16 text-3xl sm:bottom-48 sm:text-5xl text-center font-extrabold pb-8"
+        >
           Parallax Scrolling Website
         </h2>
       </section>
